@@ -1,0 +1,21 @@
+---
+system_packages:
+  - bat
+  - pwgen
+  - redis-tools
+  - hydra
+  - jq
+  - npm
+  - gcc
+  - make
+
+network_packages:
+  - ngrep
+  - net-tools
+  - nmap
+  - iperf
+
+editor_packages:
+  - vim
+  - atom
+  - gedit

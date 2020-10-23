@@ -1,0 +1,22 @@
+---
+
+- name: Systems Packages
+  apt:
+    update_cache: yes
+    name: "{{ item }}"
+  loop:
+    "{{ system_packages }}"
+
+- name: Network Packages
+  apt:
+    update_cache: yes
+    name: "{{ item }}"
+  loop:
+    "{{ network_packages }}"
+
+- name: Editor Packages
+  apt:
+    update_cache: yes
+    name: "{{ item }}"
+  loop:
+    "{{ editor_packages }}"
